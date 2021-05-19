@@ -3,7 +3,7 @@ complete <- function(directory, id = 1 : 332) {
         df <- data.frame()
         for (i in 1 : length(index)) {
                 b <- read.csv(index[i])
-                boom <- complete.cases(b)
+                b <- complete.cases(b)
                 s <- sum(b)
                 df <- rbind(df, s)
         }
