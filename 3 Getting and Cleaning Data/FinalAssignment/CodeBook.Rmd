@@ -2,7 +2,7 @@
 title: "Code Book"
 author: "SolDelgadillo"
 date: "7/23/2021"
-output: html_document
+output: pdf_document
 editor_options: 
   markdown: 
     wrap: 72
@@ -35,8 +35,8 @@ The raw data set can be downloaded from the following website:
 ```{r eval = FALSE}
 # Download de file
 fileURL <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
-download.file(fileURL, "./Data/UCI HAR Data.zip")
-unzip("./Data/UCI HAR Data.zip")
+download.file(fileURL, "Data/UCI HAR Data.zip")
+unzip("Data/UCI HAR Data.zip")
 # Save the download date
 download_date <- Sys.time()
 ```
@@ -45,7 +45,7 @@ The script in this repository, first, reads the data from the files
 listed below:
 
 -   'features.txt': List of all features.
--   'activity_labels.txt': Links tge class labels with their actovuty
+-   'activity_labels.txt': Links the class labels with their activity
     name.
 -   'train/X_train.txt': Training set.
 -   'train/y_train.txt': Training labels.
@@ -63,18 +63,16 @@ For each record it is provided:
 -   A 561-feature vector with time and frequency domain variables.
 -   Its activity label.
 -   An identifier of the subject who carried out the experiment.
-    \#\#\#Notes on the original (raw) data Some additional notes (if
-    available, otherwise you can leave this section out).
-
+   
 ```{r eval = FALSE}
-features <- read.table("../Data/UCI HAR Dataset/features.txt", col.names = c("N", "Variables"))
-activities <- read.table("../Data/UCI HAR Dataset/activity_labels.txt", col.names = c("ActivitiesId", "Label"))
-subject_test <- read.table("../Data/UCI HAR Dataset/test/subject_test.txt", col.names = c("SubjectId"))
-x_test <- read.table("../Data/UCI HAR Dataset/test/X_test.txt", col.names = features$Variables)
-y_test <- read.table("../Data/UCI HAR Dataset/test/y_test.txt", col.names= "ActivitiesId")
-subject_train <- read.table("../Data/UCI HAR Dataset/train/subject_train.txt", col.names = c("SubjectId"))
-x_train <- read.table("../Data/UCI HAR Dataset/train/X_train.txt", col.names = features$Variables)
-y_train <- read.table("../Data/UCI HAR Dataset/train/y_train.txt", col.names = "ActivitiesId")
+features <- read.table("Data/UCI HAR Dataset/features.txt", col.names = c("N", "Variables"))
+activities <- read.table("Data/UCI HAR Dataset/activity_labels.txt", col.names = c("ActivitiesId", "Label"))
+subject_test <- read.table("Data/UCI HAR Dataset/test/subject_test.txt", col.names = c("SubjectId"))
+x_test <- read.table("Data/UCI HAR Dataset/test/X_test.txt", col.names = features$Variables)
+y_test <- read.table("Data/UCI HAR Dataset/test/y_test.txt", col.names= "ActivitiesId")
+subject_train <- read.table("Data/UCI HAR Dataset/train/subject_train.txt", col.names = c("SubjectId"))
+x_train <- read.table("Data/UCI HAR Dataset/train/X_train.txt", col.names = features$Variables)
+y_train <- read.table("Data/UCI HAR Dataset/train/y_train.txt", col.names = "ActivitiesId")
 ```
 
 \#\#Creating the tidy datafile
