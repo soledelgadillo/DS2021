@@ -2,9 +2,7 @@
 title: "ReadMe"
 author: "Sol Delgadillo"
 date: "7/23/2021"
-output:
-  md_document:
-    variant: markdown_github
+output: pdf_document
 editor_options: 
   markdown: 
     wrap: sentence
