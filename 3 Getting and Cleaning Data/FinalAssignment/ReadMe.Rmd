@@ -2,9 +2,7 @@
 title: "ReadMe"
 author: "Sol Delgadillo"
 date: "7/23/2021"
-output: output:
-  md_document:
-    variant: markdown_github
+output: pdf_document
 editor_options: 
   markdown: 
     wrap: sentence
@@ -40,3 +38,5 @@ Further information on how the data was read and manipulated can be found in the
     -   Appropriately labels the data set with descriptive variable names.
 
     -   From the data set in the previous step, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+
+-   Final_dataset.txt: tidy data set created in the last step of run_analysis.R
