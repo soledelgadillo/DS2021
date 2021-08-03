@@ -1,13 +1,3 @@
----
-title: "ReadMe"
-author: "Sol Delgadillo"
-date: "7/23/2021"
-output: pdf_document
-editor_options: 
-  markdown: 
-    wrap: sentence
----
-
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
