@@ -1,17 +1,3 @@
----
-title: "Code Book"
-author: "SolDelgadillo"
-date: "7/23/2021"
-output: pdf_document
-editor_options: 
-  markdown: 
-    wrap: 72
----
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
 ## Project Description
 
 The experiments have been carried out with a group of 30 volunteers
