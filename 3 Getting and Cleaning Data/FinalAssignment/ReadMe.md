@@ -1,7 +1,3 @@
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
 ## Getting and Cleaning Data Course Project: Human Activity Recognition Using Smartphones Data Set
 
 The purpose of this project is to demonstrate your ability to collect, work with, and clean a data set.
